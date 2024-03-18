@@ -1,0 +1,201 @@
+.manrope-<uniquifier> {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.modal-window {
+    display: flex;
+    width: 933px;
+    height: 587px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+}
+
+.modal-window__product-img {
+    /* position: relative; */
+    width: 348px;
+    height: 298px;
+    margin-left: 32px;
+    border-radius: 25px;
+    background-color: rgba(57, 54, 54, 0.45);
+    /* border: 2px solid black; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/ptoductFon.jpg);
+}
+.modal-window__product-img__ptoduct-fon {
+    width: 100%;
+}
+
+.modal-window__title-block {
+    position: absolute;
+    width: 121px;
+    height: 67px;
+    margin-left: 412px;
+    gap: 24px;
+    /* border: 2px solid black; */
+
+}
+
+.title-block__name, .title-block__text{
+    margin: 0;
+    font-family: "Manrope";
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.title-block__name {
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 10px; 
+}
+
+.title-block__text {
+    font-weight: 400;
+}
+
+.hr {
+    border-top: 1px solid #E6E6E6;
+    width: 489px;
+    margin-top: 123px;
+    margin-left: 32px;
+    /* border-radius: 100px */   
+}
+
+.modal-window__sous-block {
+    width: 489px;
+    height: 25px;
+    margin-top: 148px;
+    margin-left: -489px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Manrope";
+}
+
+.sous-block__name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #020A0A;
+}
+
+.sous-block__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #787878;  
+}
+
+.modal-window__selection-block {
+    /* border: 2px solid black; */
+    width: 489px;
+    height: 220px;
+    margin-top: 185px;
+    margin-left: -489px;
+}
+
+.selection-element {
+    /* box-sizing: border-box; */
+    width: 489px;
+    height: 49px;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    background-color: #F6F7F8;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.5px;
+    color: #020A0A; 
+}
+
+.modal-window__info-block {
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    position: absolute;
+    width: 348px;
+    height: 173px;
+    margin-top: 362px;
+    margin-left: 32px;
+    font-family: "Manrope";   
+}
+
+.info-block__name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #020A0A;
+    margin: 0;
+    height: 25px;
+}
+
+.info-block__text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #787878;
+    height: 25px;
+    margin-top: 8px; 
+}
+
+.modal-window__price-block {
+    /* border: 2px solid black; */
+    width: 489px;
+    height: 65px;
+    margin-top: 475px;
+    margin-left: -489px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Manrope";
+    align-items:center; 
+}
+
+.price-block__price {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    color: #020A0A;
+    margin: 0;
+}
+
+.price-block__button {
+    box-sizing: border-box;
+    width: 176px;
+    height: 65px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 100px;
+    background: #DE341D; 
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 7px black;
+}
+
+.price-block__button:hover {
+    background: #861e11;
+    box-shadow: none;
+    color: #ffffffbf;
+}
