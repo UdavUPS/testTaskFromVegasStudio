@@ -109,7 +109,8 @@ body {
 }
 
 .selection-element {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    align-items:center;
     width: 489px;
     height: 49px;
     padding: 5px 12px 5px 12px;
