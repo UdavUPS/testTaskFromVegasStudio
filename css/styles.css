@@ -151,10 +151,16 @@ body {
 
 .selection-element__text {
     height: 112px;
-    height: 33px;
+    /* height: 33px; */
     display: flex;
     justify-content: space-between;
     text-align: center;
+    /* gap: 10px; */
+}
+
+.selectionNum-, .selectionNum, .selectionPus {
+    margin-right: 8px;
+    cursor: pointer;
 }
 /* .sous-block__name {
     display: inline-block;
@@ -235,6 +241,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     box-shadow: 2px 2px 7px black;
+    cursor: pointer;
 }
 
 .price-block__button:hover {
