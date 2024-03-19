@@ -31,13 +31,38 @@ for (let i = 0; i < selectionNums.length; i++) {
     selectionNums[i].innerHTML = 0;
 }
 
+for (let i = 0; i < selectionNumsMin.length; i++) {
+    if (parseInt(selectionNums[i].innerHTML) == 0) {
+        selectionNumsMin[i].style.color = '#787878';
+    }
+    
+}
+
+
 for (let i = 0; i < selectionNumsPus.length; i++) {
     selectionNumsPus[i].addEventListener('click', () => {
         if (parseInt(quantityFree.innerHTML) == 0) {
             quantityFree.innerHTML = 1;
             costSeter();
         }
-        selectionNums[i].innerHTML = parseInt(selectionNums[i].innerHTML) + 1;
+        
+        let check = 0;
+        for (let i = 0; i < selectionNums.length; i++) {
+            check += parseInt(selectionNums[i].innerHTML);
+        }
+
+        if (check < 10) {
+            selectionNums[i].innerHTML = parseInt(selectionNums[i].innerHTML) + 1;
+            for (let i = 0; i < selectionNumsPus.length; i++) {
+                selectionNumsPus[i].style.color = '#020A0A';
+                selectionNumsMin[i].style.color = '#020A0A'; 
+            }
+        }
+        if (check == 9) {
+            for (let i = 0; i < selectionNumsPus.length; i++) {
+            selectionNumsPus[i].style.color = '#787878';
+        }
+    }
     })
     
 }
@@ -47,11 +72,18 @@ for (let i = 0; i < selectionNumsMin.length; i++) {
 
         if (parseInt(selectionNums[i].innerHTML) > 0) {
             selectionNums[i].innerHTML = parseInt(selectionNums[i].innerHTML) - 1;
+            for (let i = 0; i < selectionNumsPus.length; i++) {
+                selectionNumsPus[i].style.color = '#020A0A'; 
+            }
+        }
+
+        if (parseInt(selectionNums[i].innerHTML) == 0) {
+            selectionNumsMin[i].style.color = '#787878';
         }
 
         let check = 0;
         for (let i = 0; i < selectionNums.length; i++) {
-            check = check + parseInt(selectionNums[i].innerHTML);
+            check += parseInt(selectionNums[i].innerHTML);
         }
 
         if (check == 0) {
@@ -66,7 +98,7 @@ but.addEventListener('click', () => {
     let sum = 0;
 
     for (let i = 0; i < selectionNums.length; i++) {
-        sum = sum + parseInt(selectionNums[i].innerHTML);
+        sum += parseInt(selectionNums[i].innerHTML);
     }
 
     sum = sum * 60 - 60;

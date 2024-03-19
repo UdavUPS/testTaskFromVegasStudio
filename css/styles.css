@@ -162,6 +162,10 @@ body {
     margin-right: 8px;
     cursor: pointer;
 }
+
+.selectionNum-, .selectionPus {
+    font-size: 22px;
+}
 /* .sous-block__name {
     display: inline-block;
     margin-right: 45px;
