@@ -26,7 +26,6 @@ function costSeter() {
 totalPrice.innerHTML = total + ' ₽';
 quantityFree.innerHTML = 0;
 costSeter();
-/* console.log(totalPrice); */
 for (let i = 0; i < selectionNums.length; i++) {
     selectionNums[i].innerHTML = 0;
 }
