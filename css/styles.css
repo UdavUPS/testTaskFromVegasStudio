@@ -51,21 +51,25 @@ body {
 .title-block__name, .title-block__text{
     margin: 0;
     font-family: "Manrope";
-    font-size: 18px;
-    line-height: 25.2px;
     letter-spacing: 0em;
     text-align: left;
 }
 
 .title-block__name {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     margin-top: 3px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #020A0A;
 }
 
 .title-block__text {
     font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #787878;
 }
 
 .hr {
@@ -79,10 +83,11 @@ body {
 .modal-window__sous-block {
     width: 489px;
     height: 25px;
-    margin-top: 148px;
+    margin-top: 140px;
     margin-left: -489px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     font-family: "Manrope";
 }
 
@@ -91,13 +96,17 @@ body {
     font-weight: 700;
     line-height: 25px;
     color: #020A0A;
+    margin-right: auto;
 }
 
 .sous-block__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    color: #787878;  
+    color: #787878;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;  
 }
 
 .modal-window__selection-block {
@@ -125,6 +134,39 @@ body {
     line-height: 22.5px;
     color: #020A0A; 
 }
+.selection-element__name {
+    margin-right: 5px;
+}
+
+.dop-price {
+    margin-right: auto;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: #787878;
+
+}
+
+.selection-element__text {
+    height: 112px;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* .sous-block__name {
+    display: inline-block;
+    margin-right: 45px;
+} */
+
+/* .selection-element__text {
+    border: 2px solid black;
+    height: 33px;
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 .modal-window__info-block {
     /* border: 2px solid black; */
